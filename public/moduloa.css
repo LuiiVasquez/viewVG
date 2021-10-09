@@ -1,0 +1,7 @@
+#myDIV{
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    margin-top: 20px;
+    display: none;
+}

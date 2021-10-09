@@ -1,0 +1,131 @@
+body{
+	background: red;
+}
+
+ul li a{
+    font-size: 18px;
+}
+.navbar-brand{
+    font-size: 25px;
+}
+
+.modal-header{
+    background: rgb(48, 47, 43);
+    color: #fff;
+}
+#text-rojo{
+    color: red;
+}
+
+.contimg{
+    text-align: center;
+	align-items: center;
+}
+#imguvg{
+    top: 50%;
+}
+
+
+
+
+
+
+/* ============ multidrop PC ============ */
+@media all and (min-width: 992px) {
+
+	.dropdown-menu li{
+		position: relative;
+	}
+	.dropdown-menu .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.dropdown-menu .submenu-left{ 
+		right:100%; left:auto;
+	}
+
+	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover > .submenu{
+		display: block;
+	}
+}	
+
+
+
+
+/* ============ Boton popup info ============ */
+.action{
+	position: fixed;
+	bottom: 50px;
+	left: 50px;
+	width: 60px;
+	height: 60px;
+	background-color: #078b45;
+	border-radius: 50px;
+	color:#FFF;
+	box-shadow: 2px 2px 3px #424949;
+	display: none;
+	text-align:center;
+	cursor: pointer;
+}
+
+.btn-float{
+	margin-top:22px;
+	cursor: pointer;
+}
+
+
+/* ============ Portatiles ============ */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+	.dropdown-menu .dropdown-menu{
+		margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+	}
+	.action{
+		bottom: 20px;
+		left: 20px;
+	}
+	.contimg img{
+		height: 100%;
+		width: 40%;
+	}
+	.ifr-360{
+		height: 375px;
+		width: 100%;
+	}
+	.ifr-360-1{
+		height: 375px;
+	}
+
+}
+/* ============ Dispositivos moviles ============ */
+@media (max-width: 991px) {
+	.dropdown-menu .dropdown-menu{
+		margin-left:0.7rem; margin-right:0.7rem; margin-bottom: .5rem;
+	}
+	.action{
+		bottom: 20px;
+		left: 20px;
+	}
+	.contimg img{
+		height: 100%;
+		width: 70%;
+	}
+	.ifr-360{
+		height: 350px;
+	}
+	.ifr-360-1{
+		height: 350px;
+		width: 50px;
+	}
+	.img-modal{
+		height: 200px;
+	}
+	.maps{
+		height: 350;
+		width: 100%;
+	}
+}	
