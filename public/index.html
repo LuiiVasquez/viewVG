@@ -133,10 +133,27 @@
 
         </ul>
 
-        <form class="d-flex">
+
+
+          <!-- Search form -->
+        <form class="d-flex search-input">
+          <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Buscar...">
+          <datalist id="datalistOptions" class="autocom-box"> 
+            <option value="A4">
+            <option value="Gerson Perez">
+            <option value="Jefe de cómputo">
+            <option value="grperez@uvg.edu.gt">
+            <option value="41301">
+          </datalist>
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form> 
+
+
+
+        <!-- <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
+        </form> -->
 
       </div>
     </div>
@@ -357,8 +374,8 @@
 <script src="./modal.js"></script>
 <script src="./modal-inf.js"></script>
 
-<!-- ============= click en modelos ============== -->
-<!--<script type="module" src="./click.js"></script>-->
+<!-- ============= Script para busqueda ============== -->
+<script src="./autowords.js"></script>
 
 
 </body>

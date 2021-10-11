@@ -51,7 +51,34 @@ ul li a{
 	}
 }	
 
-
+/* ============ Busqueda ============ */
+.search-input .autocom-box{
+    padding: 0px;
+    max-height: 280px;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+	display: none;
+}
+.search-input.active .autocom-box{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.autocom-box option{
+    list-style: none;
+    padding: 8px 12px;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+    display: none;
+}
+.search-input.active .autocom-box option{
+    display: block;
+}
+.autocom-box option:hover{
+    background: #efefef;
+}
 
 
 /* ============ Boton popup info ============ */
@@ -99,7 +126,10 @@ ul li a{
 	.ifr-360-1{
 		height: 375px;
 	}
-
+	.search-input.active .autocom-box option{
+		height: auto;
+		display: block;
+	}
 }
 /* ============ Dispositivos moviles ============ */
 @media (max-width: 991px) {
@@ -127,5 +157,9 @@ ul li a{
 	.maps{
 		height: 350;
 		width: 100%;
+	}
+	.search-input.active .autocom-box option{
+		height: auto;
+		display: block;
 	}
 }	
