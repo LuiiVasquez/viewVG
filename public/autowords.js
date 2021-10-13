@@ -1,3 +1,4 @@
+
 // getting all required elements
 const searchWrapper = document.querySelector(".search-input");
 const inputBox = searchWrapper.querySelector("input");
@@ -52,14 +53,21 @@ function showSuggeseitons(list){
 
 
 let suggestions = [
-    "Luis",
-    "Lopez",
-    "Lucas",
-    "Logan",
-    "Lucia",
-    "Leonidas",
-    "Antonio",
-    "Vasquez",
-    "Tiu",
-    "30889567"
+    /* ------- A2 ------- */
+    "Dirección ejecutiva",
+    "Juan Carlos Villatoro",
+    "41101",
+    
+    /* ------- A4 ------- */
+    "Jefe de cómputo",
+    "Gerson René Pérez Martínez",
+    "41301",
+
+    /* ------- B1 ------- */
+    "Ayuda financiera",
+    "Registro académico",
+    "Administración",
+    "Asistente de administración",
+    
 ];
+

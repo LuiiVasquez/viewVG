@@ -496,3 +496,41 @@ function click_area4(){
 }
 // event Listener
 btn_area4.addEventListener('click', click_area4);
+
+
+
+
+
+
+/* ---------------- Exportar variables para search.js ---------------- */
+export function arrow(x, y, z){
+    flech.position.set(x, y, z);
+    scene.add(flech);
+    scene.add( directionalLight );
+}
+
+/*----------------------- funcion para centrar la cámara en todos los modulos ----------------------- */
+export function center_camera(x,y,z){
+    // resetear los controles
+    controls.reset();
+    // cambiar de posicion la camara
+    controls.target.set(x,y,z);
+    // cambiar la rotación de la camara
+    camera.rotation.set(-1, -2, -3);
+    // actualizar la posición de la camara y orbit controls
+    controls.update();
+}
+export function show(btn){
+    let float = document.getElementById("div-btnFloat");
+    let img = document.getElementById(btn);
+    toggle('btn-float', 'none'); // esconder todos los botones
+    float.style.display = 'none';
+    img.style.display = 'none';
+    if(float.style.display === 'none'){
+        float.style.display = 'block';
+        img.style.display = 'block';
+    } else {
+        float.style.display = 'none';
+        img.style.display = 'none';
+    }
+}

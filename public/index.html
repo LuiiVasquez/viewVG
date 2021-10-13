@@ -89,19 +89,19 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">Varios</a>
                   <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" id="btn_e" href="#">E</a></li>
+                    <li><a class="dropdown-item" id="btn_f" href="#">F</a></li>
                     <li><a class="dropdown-item" id="btn_k" href="#">K</a></li>
-                    <li><a class="dropdown-item" id="btn_cafete" href="#">Cafetería</a></li>
-                    <li><a class="dropdown-item" id="btn_sama" href="#">Salón mayor</a></li>
-                    <li><a class="dropdown-item" id="btn_n" href="#">N</a></li>
                     <li><a class="dropdown-item" id="btn_m1" href="#">M1</a></li>
                     <li><a class="dropdown-item" id="btn_m2" href="#">M2</a></li>
-                    <li><a class="dropdown-item" id="btn_f" href="#">F</a></li>
-                    <li><a class="dropdown-item" id="btn_e" href="#">E</a></li>
+                    <li><a class="dropdown-item" id="btn_n" href="#">N</a></li>
                     <li><a class="dropdown-item" id="btn_ñ" href="#">Ñ</a></li>
-                    <li><a class="dropdown-item" id="btn_caja" href="#">Caja</a></li>
-                    <li><a class="dropdown-item" id="btn_gari" href="#">Garita</a></li>
-                    <li><a class="dropdown-item" id="btn_l" href="#">Salón altiplano</a></li>
+                    <li><a class="dropdown-item" id="btn_cafete" href="#">Cafetería</a></li>
+                    <li><a class="dropdown-item" id="btn_sama" href="#">Salón mayor</a></li>
                     <li><a class="dropdown-item" id="btn_hospi" href="#">Hospital de ojos</a></li>
+                    <li><a class="dropdown-item" id="btn_l" href="#">Salón altiplano</a></li>
+                    <li><a class="dropdown-item" id="btn_gari" href="#">Garita</a></li>
+                    <li><a class="dropdown-item" id="btn_caja" href="#">Caja</a></li>
                   </ul>
               </li>
               <!-- campos/canchas/areas -->
@@ -136,8 +136,8 @@
 
 
           <!-- Search form -->
-        <form class="d-flex search-input">
-          <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Buscar...">
+        <div class="d-flex search-input">
+          <input class="form-control" list="datalistOptions" id="text_user" placeholder="Buscar...">
           <datalist id="datalistOptions" class="autocom-box"> 
             <option value="A4">
             <option value="Gerson Perez">
@@ -145,8 +145,8 @@
             <option value="grperez@uvg.edu.gt">
             <option value="41301">
           </datalist>
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form> 
+          <button class="btn btn-outline-success" id="btn_busq"> Buscar </button>
+        </div> 
 
 
 
@@ -376,6 +376,8 @@
 
 <!-- ============= Script para busqueda ============== -->
 <script src="./autowords.js"></script>
+<script type="module" src="./search.js"></script>
+
 
 
 </body>
