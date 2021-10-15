@@ -149,7 +149,7 @@ document.getElementById('btn_b3').onclick = () =>
             <li> smmendez@uvg.edu.gt </li>
             <li> ext: 41207 </li>
         </ul>
-    Secretaria facultad de ingeniería
+    Asistente facultad de eduación
         <ul>
             <li> Lisbeth Maritza Cuy Chom </li>
             <li> lmcuy@uvg.edu.gt </li>
@@ -184,7 +184,7 @@ document.getElementById('btn_b3').onclick = () =>
             <li> csaloj@uvg.edu.gt </li>
             <li> ext: 41216 </li>
         </ul>
-    Dirección departamento de educación
+    Dirección departamento de educación física, deporte y recreación
         <ul>
             <li> M.A. Danilo Ponciano Nuñez </li>
             <li> pdponciano@uvg.edu.gt </li>
@@ -217,11 +217,6 @@ document.getElementById('btn_b4').onclick = () =>
             <li> Axel René Ávila Monzón </li>
             <li> aravila@uvg.edu.gt </li>
             <li> ext: 41305 </li>
-        </ul>
-    Encargado de laboratorios
-        <ul>
-            <li> Iván </li>
-            <li> oiyac@uvg.edu.gt </li>
         </ul>
     <hr>
     Asistente de cursos libres (Centro de Idiomas)
@@ -364,7 +359,7 @@ document.getElementById('btn_cafe').onclick = () =>
     Horario de atención Lunes-Viernes 8:00-20:00 y Sábados 7:00-16:00 `, 
     'Cerrar');
 document.getElementById('btn_mayor').onclick = () => 
-    showModalImg('Salón Mayor (R)', './img/fotos/mayor.jpg', 'Salón mayor', 'El salón mayor es un edificio alto color gris con techo de lámina gris de tres entradas.', `
+    showModalImg('Salón Mayor (P)', './img/fotos/mayor.jpg', 'Salón mayor', 'El salón mayor es un edificio alto color gris con techo de lámina gris de tres entradas.', `
     <ul>
         <li> (Según actividad) </li>
     </ul>
@@ -449,7 +444,7 @@ document.getElementById('btn_cajaa').onclick = () =>
         <ul>
             <li> Rigoberto Tepaz Jiatz </li>
             <li> rtpaz@uvg.edu.gt </li>
-            <li> ext: 41108</li>
+            <li> ext: 41108 </li>
         </ul>
     Asistente de cuentas por cobrar
         <ul>

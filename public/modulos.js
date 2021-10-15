@@ -303,27 +303,27 @@ btn_modc5.addEventListener('click', click_modulo_c5);
 /*----------------------- funcion click para varios------------------------*/
 function click_varios_k(){
     // reseteo de camara y controles
-    centrar_camara(-50,0,-40);
+    centrar_camara(-37,0,-40);
     // Colocación de flecha con el modulo
-    flecha(-50,10,-40);
+    flecha(-37,10,-40);
     mostrar("btn_kk");
 }
 // event Listener
 btn_k.addEventListener('click', click_varios_k);
 function click_varios_cafe(){
     // reseteo de camara y controles
-    centrar_camara(-5,0,-160);
+    centrar_camara(-5,0,-165);
     // Colocación de flecha con el modulo
-    flecha(-5,10,-160);
+    flecha(-5,10,-165);
     mostrar("btn_cafe");
 }
 // event Listener
 btn_cafe.addEventListener('click', click_varios_cafe);
 function click_varios_mayor(){
     // reseteo de camara y controles
-    centrar_camara(-35,0,-160);
+    centrar_camara(-35,0,-165);
     // Colocación de flecha con el modulo
-    flecha(-35,15,-160);
+    flecha(-35,15,-165);
     mostrar("btn_mayor");
 }
 // event Listener
