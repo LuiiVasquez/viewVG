@@ -158,7 +158,7 @@ function buscar(){
         modulos.show("btn_ff");
         clean();
     } 
-    else if(text_value==="E"||text_value==="EDUCON"||text_value==="Dirección EDUCON"||text_value==="Nely Amparo Elena Can Saquic"||text_value==="41401"||text_value==="Asistente 1 dirección EDUCON"||text_value==="Dany Enrique Queché Martínez"||text_value==="41401"){
+    else if(text_value==="E"||text_value==="EDUCON"||text_value==="Dirección EDUCON"||text_value==="Nely Amparo Elena Can Saquic"||text_value==="41401"||text_value==="Asistente 1 dirección EDUCON"||text_value==="Dany Enrique Queché Martínez"||text_value==="41401"||text_value==="Dirección finca agrícola"||text_value==="Investigador centro de estudios agrícolas y alimentarios"||text_value==="Edwin Baudilio de León"||text_value==="41112"||text_value==="Asistente de producción"||text_value==="Gilberto de León"||text_value==="Investigador asistente"||text_value==="Josué Isaías Bocel"){
         modulos.arrow(-40,10,80);
         modulos.center_camera(-40,0,80);
         modulos.show("btn_ee");

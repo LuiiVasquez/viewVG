@@ -154,6 +154,7 @@ let suggestions = [
     /* ------- E ------- */
     "E", "EDUCON", "Dirección EDUCON", "Nely Amparo Elena Can Saquic", "41401",
     "Asistente 1 dirección EDUCON", "Dany Enrique Queché Martínez", "41401",
+    "Dirección finca agrícola", "Investigador centro de estudios agrícolas y alimentarios", "Edwin Baudilio de León", "41112", "Asistente de producción", "Gilberto de León", "Investigador asistente", "Josué Isaías Bocel", 
 
     /* ------- Ñ ------- */
     "Ñ", "Laboratorio de música 2",

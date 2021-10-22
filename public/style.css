@@ -1,14 +1,12 @@
 body{
 	background: red;
 }
-
 ul li a{
     font-size: 18px;
 }
 .navbar-brand{
     font-size: 25px;
 }
-
 .modal-header{
     background: rgb(48, 47, 43);
     color: #fff;
@@ -16,13 +14,22 @@ ul li a{
 #text-rojo{
     color: red;
 }
-
 .contimg{
     text-align: center;
 	align-items: center;
 }
 #imguvg{
     top: 50%;
+}
+.link{
+	color: green;
+}
+.link:hover{
+	color: green;
+}
+.justify{
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 
