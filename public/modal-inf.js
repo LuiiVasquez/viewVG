@@ -1,12 +1,29 @@
+/* Archivo para información de módulos, enviados a moda.js*/
+
 /*============= Modulos A ==============*/
-document.getElementById('btn_a1').onclick = () => 
-    showModalImg('Módulo A1', './img/fotos/a1.jpg', 'Salones de clases (ITEC)', 'El módulo A1 es el primero de los módulos A, color crema con techo blanco, dividido en 7 diferentes secciones.', `
+document.getElementById("btn_a1").onclick = () =>
+  //añadir función onClick al botón
+  showModalImg(
+    // enviar la información a modal.js
+    "Módulo A1",
+    "./img/fotos/a1.jpg",
+    "Salones de clases (ITEC)",
+    "El módulo A1 es el primero de los módulos A, color crema con techo blanco, dividido en 7 diferentes secciones.",
+    `
     <ul>
         <li> Salones de clases </li>
     </ul>
-    `,'(Vacío)', 'Cerrar');
-document.getElementById('btn_a2').onclick = () => 
-    showModal('Módulo A2', 'https://momento360.com/e/u/dac2467d11a84a678b74db53eb199ed7?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium', 'Salón de usos múltiples', 'El módulo A2 es un edificio color crema de techo blanco y dos pasillos.', `
+    `,
+    "(Vacío)",
+    "Cerrar"
+  );
+document.getElementById("btn_a2").onclick = () =>
+  showModal(
+    "Módulo A2",
+    "https://momento360.com/e/u/dac2467d11a84a678b74db53eb199ed7?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium",
+    "Salón de usos múltiples",
+    "El módulo A2 es un edificio color crema de techo blanco y dos pasillos.",
+    `
     <ul>
         <li> Dirección ITEC </li>
         <li> Consejería estudiantíl </li>
@@ -15,7 +32,8 @@ document.getElementById('btn_a2').onclick = () =>
         <li> Salón de usos múltiples </li>
         <li> Baños </li>
     </ul>
-    `,`
+    `,
+    `
     Dirección ITEC
         <ul>
             <li> Lic. Misael Antonio Esquina Quinom </li>
@@ -49,22 +67,38 @@ document.getElementById('btn_a2').onclick = () =>
     <br>
     Horario de atención
     Lunes-Viernes 8:00-17:00 y Sábados 8:00-12:00 
-    `, 'Cerrar');
-document.getElementById('btn_a3').onclick = () => 
-    showModalImg('Módulo A3', './img/fotos/a3.jpg', 'Salones de clases (ITEC)', 'El módulo A3 es un edificio color crema con techo blanco, dividido en 7 diferentes secciones.', `
+    `,
+    "Cerrar"
+  );
+document.getElementById("btn_a3").onclick = () =>
+  showModalImg(
+    "Módulo A3",
+    "./img/fotos/a3.jpg",
+    "Salones de clases (ITEC)",
+    "El módulo A3 es un edificio color crema con techo blanco, dividido en 7 diferentes secciones.",
+    `
     <ul>
         <li> Salones de clases </li>
     </ul>
-    `,'(Vacío)', 'Cerrar');
-document.getElementById('btn_a4').onclick = () => 
-    showModal('Módulo A4', 'https://momento360.com/e/u/9b7d68043cc3480685ce4c2d95595a12?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium', 'Laboratorio de computación 1','El módulo A4 es un edificio color crema de techo verde con una sola entrada.', `
+    `,
+    "(Vacío)",
+    "Cerrar"
+  );
+document.getElementById("btn_a4").onclick = () =>
+  showModal(
+    "Módulo A4",
+    "https://momento360.com/e/u/9b7d68043cc3480685ce4c2d95595a12?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium",
+    "Laboratorio de computación 1",
+    "El módulo A4 es un edificio color crema de techo verde con una sola entrada.",
+    `
     <ul>
         <li> Centro de cómputo </li>
         <li> Laboratorio de computación 1 </li>
         <li> Laboratorio de computación 2 </li>
         <li> Baños </li>
     </ul>
-    `,`
+    `,
+    `
     Jefe de cómputo
         <ul>
             <li> Gerson René Pérez Martínez </li>
@@ -80,24 +114,40 @@ document.getElementById('btn_a4').onclick = () =>
     <br>
     Horario de atención
     Lunes-Viernes 8:00-17:00 y Sábados 8:00-12:00 
-    `, 'Cerrar');
-document.getElementById('btn_a5').onclick = () => 
-    showModalImg('Módulo A5', './img/fotos/a5.jpg', 'Laboratorio', 'El módulo A5 es el último de los módulos A, color crema con techo verde con 4 entradas.', `
+    `,
+    "Cerrar"
+  );
+document.getElementById("btn_a5").onclick = () =>
+  showModalImg(
+    "Módulo A5",
+    "./img/fotos/a5.jpg",
+    "Laboratorio",
+    "El módulo A5 es el último de los módulos A, color crema con techo verde con 4 entradas.",
+    `
     <ul>
         <li> Laboratorio </li>
     </ul>
-    `,'(Vacío)', 'Cerrar');  
+    `,
+    "(Vacío)",
+    "Cerrar"
+  );
 
 /*============= Modulos B ==============*/
-document.getElementById('btn_b1').onclick = () => 
-    showModalImg('Módulo B1', './img/fotos/b1.jpg', 'Ayuda financiera/Registro académico', 'El módulo B1 es un edificio color crema de techo rojo con una sola entrada.', `
+document.getElementById("btn_b1").onclick = () =>
+  showModalImg(
+    "Módulo B1",
+    "./img/fotos/b1.jpg",
+    "Ayuda financiera/Registro académico",
+    "El módulo B1 es un edificio color crema de techo rojo con una sola entrada.",
+    `
     <ul>
         <li> Ayuda financiera </li>
         <li> Registro académico </li>
         <li> Departamento de compras </li>
         <li> Administración </li>
     </ul>
-    `,`
+    `,
+    `
     Ayuda financiera
         <ul>
             <li> Susana Talé Pech </li>
@@ -109,6 +159,12 @@ document.getElementById('btn_b1').onclick = () =>
             <li> Gloria Macario Tecum </li>
             <li> gmmacario@uvg.edu.gt </li>
             <li> ext: 41118 </li>
+        </ul>
+    Especialista en asuntos estudiantiles
+        <ul>
+            <li> Lidia Ofelia Xocop Roquel </li>
+            <li> loxocop@uvg.edu.gt </li>
+            <li> ext: 41115 </li>
         </ul>
     Administración
         <ul>
@@ -122,22 +178,49 @@ document.getElementById('btn_b1').onclick = () =>
             <li> jdminchez@uvg.edu.gt </li>
             <li> ext: 41105 </li>
         </ul>
+    Director administrativo
+        <ul>
+            <li> Erick Estuardo Rodas Ericastilla </li>
+            <li> eerodas@uvg.edu.gt </li>
+            <li> ext: 41103 </li>
+        </ul>
+    Director de calidad académica
+        <ul>
+            <li> José Antonio López Rodríquez </li>
+            <li> ext: 41113 </li>
+        </ul>
     <br>
     Horario de atención
     Lunes-Viernes 8:00-17:00 y Sábados 8:00-12:00 
-    `, 'Cerrar');
-document.getElementById('btn_b2').onclick = () => 
-    showModalImg('Módulo B2', './img/fotos/b2.jpg', '(No especificado)', 'El módulo B2 es el un edificio en construcción.', `
+    `,
+    "Cerrar"
+  );
+document.getElementById("btn_b2").onclick = () =>
+  showModalImg(
+    "Módulo B2",
+    "./img/fotos/b2.jpg",
+    "(No especificado)",
+    "El módulo B2 es el un edificio en construcción.",
+    `
         (No especificado)
-    `,'(Vacío)', 'Cerrar');
-document.getElementById('btn_b3').onclick = () => 
-    showModal('Módulo B3', 'https://momento360.com/e/u/2e1d2c0eada8469ba11d6de6bb2d6277?utm_campaign=embed&utm_source=other&heading=150.1&pitch=-1.4&field-of-view=75&size=medium', 'Laboratorio de física/biología','El módulo B3 es un edificio color crema de techo blanco dividido en 3 secciones.', `
+    `,
+    "(Vacío)",
+    "Cerrar"
+  );
+document.getElementById("btn_b3").onclick = () =>
+  showModal(
+    "Módulo B3",
+    "https://momento360.com/e/u/2e1d2c0eada8469ba11d6de6bb2d6277?utm_campaign=embed&utm_source=other&heading=150.1&pitch=-1.4&field-of-view=75&size=medium",
+    "Laboratorio de física/biología",
+    "El módulo B3 es un edificio color crema de techo blanco dividido en 3 secciones.",
+    `
     <ul>
         <li> Secretaría universitaria </li>
         <li> Laboratorio de física/biología </li>
         <li> Oficina de directores </li>
     </ul>
-    `,`
+    `,
+    `
     Secretaria facultad de ingeniería
         <ul>
             <li> Rosa Marleny Us Can </li>
@@ -152,13 +235,12 @@ document.getElementById('btn_b3').onclick = () =>
         </ul>
     Asistente facultad de eduación
         <ul>
-            <li> Lisbeth Maritza Cuy Chom </li>
-            <li> lmcuy@uvg.edu.gt </li>
+            <li> Blanca Senovia Hernández Pocop </li>
             <li> ext: 41215 </li>
         </ul>
     Encargado de laboratorios
         <ul>
-            <li> Iván </li>
+            <li> Oscar Iván Yac Chávez </li>
             <li> oiyac@uvg.edu.gt </li>
         </ul>
     Dirección departamento de turismo
@@ -194,18 +276,26 @@ document.getElementById('btn_b3').onclick = () =>
     <br>
     Horario de atención
     Lunes-Viernes 8:00-17:00 y Sábados 8:00-12:00 
-    `, 'Cerrar');
-document.getElementById('btn_b4').onclick = () => 
-    showModal('Módulo B4', 'https://momento360.com/e/u/a73b5474dabb4fa996493c70fcdcbac1?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium', 'Laboratorio de química','El módulo B4 es un edificio color crema de techo rojo con un pasillo.', `
+    `,
+    "Cerrar"
+  );
+document.getElementById("btn_b4").onclick = () =>
+  showModal(
+    "Módulo B4",
+    "https://momento360.com/e/u/a73b5474dabb4fa996493c70fcdcbac1?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium",
+    "Laboratorio de química",
+    "El módulo B4 es un edificio color crema de techo rojo con un pasillo.",
+    `
     <ul>
         <li> Comunicación social </li>
         <li> Laboratorio de química </li>
         <li> Centro de idiomas </li>
     </ul>
-    `,`
+    `,
+    `
     Web master
         <ul>
-            <li> Luis Lopez </li>
+            <li> Luis Alberto Lopez García </li>
             <li> lalopez@uvg.edu.gt </li>
             <li> ext: 41308 </li>
         </ul>
@@ -243,163 +333,340 @@ document.getElementById('btn_b4').onclick = () =>
     <br>
     Horario de atención
     Lunes-Viernes 8:00-17:00 y Sábados 8:00-12:00 
-    `, 'Cerrar');
-document.getElementById('btn_b5').onclick = () => 
-    showModal('Módulo B5', 'https://momento360.com/e/u/444f9f51bfc8405c8e99f706bd207cfc?utm_campaign=embed&utm_source=other&heading=-218.35&pitch=-5.69&field-of-view=75&size=medium', 'Salones de clases (CEI)', 'El módulo B5 es un edfificio de tipo ladrillo dividido por 6 secciones.', `
+    `,
+    "Cerrar"
+  );
+document.getElementById("btn_b5").onclick = () =>
+  showModal(
+    "Módulo B5",
+    "https://momento360.com/e/u/444f9f51bfc8405c8e99f706bd207cfc?utm_campaign=embed&utm_source=other&heading=-218.35&pitch=-5.69&field-of-view=75&size=medium",
+    "Salones de clases (CEI)",
+    "El módulo B5 es un edfificio de tipo ladrillo dividido por 6 secciones.",
+    `
     <ul>
         <li> Salones de clases (CEI) </li>
     </ul>
-    `,'(Vacío)', 'Cerrar');
-document.getElementById('btn_b6').onclick = () => 
-    showModal2('Módulo B6', 'https://momento360.com/e/u/60515e47ffd940e8994fbeda5af47d2d?utm_campaign=embed&utm_source=other&heading=-123.93&pitch=-12.18&field-of-view=75&size=medium', 'Maker Space','https://momento360.com/e/u/e6c217ac85d64308accf22ab030c9263?utm_campaign=embed&utm_source=other&heading=87.95&pitch=-43.23&field-of-view=75&size=medium', 'Maker Space','El módulo B6 es un edificio color crema con techo rojo.', `
+    `,
+    "(Vacío)",
+    "Cerrar"
+  );
+document.getElementById("btn_b6").onclick = () =>
+  showModal2(
+    "Módulo B6",
+    "https://momento360.com/e/u/60515e47ffd940e8994fbeda5af47d2d?utm_campaign=embed&utm_source=other&heading=-123.93&pitch=-12.18&field-of-view=75&size=medium",
+    "Maker Space",
+    "https://momento360.com/e/u/e6c217ac85d64308accf22ab030c9263?utm_campaign=embed&utm_source=other&heading=87.95&pitch=-43.23&field-of-view=75&size=medium",
+    "Maker Space",
+    "El módulo B6 es un edificio color crema con techo rojo.",
+    `
     <ul>
+        <li> Maker Space Na'ojilal </li>
         <li> Enfermería </li>
-        <li> Maker Space Naojilal </li>
     </ul>
-    `,`
+    `,
+    `
+    Coordinador de Maker Space Na'ojilal
+        <ul>
+            <li> M.A. Ing. Jeremias Ezequiel Morales García </li>
+            <li> jemorales@uvg.edu.gt </li>
+            <li> ext: 41309 </li>
+        </ul>
+    FanPage (Maker Space): <a target="_blank" href="https://www.facebook.com/MakersUVG" class="link"> Pagina de facebook </a> <br>
+    LOGO (Maker Space): <a target="_blank" href="https://view.genial.ly/60ba8cad0045310d5064c7fa/interactive-image-logo-maker-uvg-altiplano" class="link"> Logo interactivo </a>
+    <br> <br>
+
     Enfermería
         <ul>
             <li> Meliza Arminda Godínez Orozco </li>
             <li> magonidez@uvg.edu.gt </li>
-            <li> ext: 41116 </li>
+            <li> ext: 41309 </li>
         </ul>
-    Encargado de Maker Space Naojilal
-        <ul>
-            <li> Jeremias </li>
-            <li> pendiente@uvg.edu.gt </li>
-            <li> ext: pendiente </li>
-        </ul>
-    Pagina (Maker Space): <a target="_blank" href="https://www.facebook.com/CEIACCESSUVG" style="font-weight: bold;"> Pagina </a>
-    <br> <br>
+    
     Horario de atención Lunes-Viernes 8:00-17:00 y Sábados 8:00-12:00 
-    `, 'Cerrar');
-document.getElementById('btn_b7').onclick = () => 
-    showModal2('Módulo B7', 'https://momento360.com/e/u/1348b1e92ddd40e18f53a75cdec6ebf5?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium', 'Biblioteca','https://momento360.com/e/u/cc40a24e33524977be7f325bc6c7013a?utm_campaign=embed&utm_source=other&heading=-256.43&pitch=-2.97&field-of-view=75&size=medium', 'Biblioteca','El módulo B7 es un edificio color crema con techo blanco.', `
-    <ul>
-        <li> Biblioteca </li>
-        <li> Fotocopiadora </li>
-    </ul>
-    `,`
-    Encargado de biblioteca
+    `,
+    "Cerrar"
+  );
+document.getElementById("btn_b7").onclick = () =>
+  showModal2(
+    "Módulo B7",
+    "https://momento360.com/e/u/1348b1e92ddd40e18f53a75cdec6ebf5?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium",
+    "Biblioteca",
+    "https://momento360.com/e/u/cc40a24e33524977be7f325bc6c7013a?utm_campaign=embed&utm_source=other&heading=-256.43&pitch=-2.97&field-of-view=75&size=medium",
+    "Biblioteca",
+    "El módulo B7 es un edificio color crema con techo blanco.",
+    `
+    Biblioteca
         <ul>
-            <li> Pendiente </li>
-            <li> pendiente@uvg.edu.gt </li>
-            <li> ext: pendiente </li>
+            <li> Colección general, títulos de apoyo para carreras universitarias. </li>
+            <li> Colección Dr. Richard Adams, + cuatro mil títulos de Antropología y Sociología. </li>
+            <li> Colección de referencia. </li>
+            <li> Colección de materiales en discos compactos y videodiscos. </li>
+            <li> Colección de revistas de, arqueología, tecnología, agricultura y temas generales. </li>
+        </ul>
+    Servicio de reproducción 
+        <ul>
+            <li> Impresiones </li>
+            <li> Fotocopias </li>
+            <li> Escaneos </li> 
+        </ul>
+    
+    `,
+    `
+    Biblioteca
+        <ul>
+            <li> biblioteca@altiplano.uvg.edu.gt </li>
+            <li> ext: 41303 </li>
         </ul>
     <br>
-    Horario de atención Lunes-Viernes 8:00-17:00 y Sábados 8:00-12:00 
-    `, 'Cerrar');
-document.getElementById('btn_b8').onclick = () => 
-    showModal2('Módulo B8', 'https://momento360.com/e/u/b2ccf916298d4535b7c130305f7d8a90?utm_campaign=embed&utm_source=other&heading=252.46&pitch=-10.1&field-of-view=75&size=medium', 'Laboratorio de computación 3', 'https://momento360.com/e/u/616d409f152443d59be02826f293dafc?utm_campaign=embed&utm_source=other&heading=-266.61&pitch=1.35&field-of-view=75&size=medium', 'Aula virtual', 'El módulo B8 es un edificio color crema con techo blanco.', `
+    Horario de atención Lunes-Viernes 8:00-17:00 y Sábados 7:30-16:00 
+    `,
+    "Cerrar"
+  );
+document.getElementById("btn_b8").onclick = () =>
+  showModal2(
+    "Módulo B8",
+    "https://momento360.com/e/u/b2ccf916298d4535b7c130305f7d8a90?utm_campaign=embed&utm_source=other&heading=252.46&pitch=-10.1&field-of-view=75&size=medium",
+    "Laboratorio de computación 3",
+    "https://momento360.com/e/u/616d409f152443d59be02826f293dafc?utm_campaign=embed&utm_source=other&heading=-266.61&pitch=1.35&field-of-view=75&size=medium",
+    "Aula virtual",
+    "El módulo B8 es un edificio color crema con techo blanco.",
+    `
     <ul>
         <li> Laboratorio de computación 3 </li>
         <li> Baños </li>
         <li> Aula virtual </li>
     </ul>
-    `,`
+    `,
+    `
     (Vacío)
-    `, 'Cerrar');
+    `,
+    "Cerrar"
+  );
 
 /*============= Modulos c ==============*/
-document.getElementById('btn_c1').onclick = () => 
-    showModalImg('Módulo C1', './img/fotos/c1.jpg', 'Salón de clases', 'El módulo C1 es un edificio pequeño color crema y techo clanco', `
+document.getElementById("btn_c1").onclick = () =>
+  showModalImg(
+    "Módulo C1",
+    "./img/fotos/c1.jpg",
+    "Salón de clases",
+    "El módulo C1 es un edificio pequeño color crema y techo clanco",
+    `
     <ul>
         <li> Salón de clases </li>
 
     </ul>
-    `,`
+    `,
+    `
     (Vacío)
-    `, 'Cerrar');
-document.getElementById('btn_c2').onclick = () => 
-    showModalImg('Módulo C2', './img/fotos/c2.jpg', 'Salón de clases', 'El módulo C2 es un edificio color crema con techo rojo.', `
+    `,
+    "Cerrar"
+  );
+document.getElementById("btn_c2").onclick = () =>
+  showModalImg(
+    "Módulo C2",
+    "./img/fotos/c2.jpg",
+    "Salón de clases",
+    "El módulo C2 es un edificio color crema con techo rojo.",
+    `
     <ul>
         <li> Salones de clases </li>
         <li> Mini librería </li>
     </ul>
-    `,'(Vacío)', 
-    'Cerrar');
-document.getElementById('btn_c3').onclick = () => 
-    showModalImg('Módulo C3', './img/fotos/c3.jpg', 'Salón de clases', 'El módulo C3 es un edificio color crema con techo rojo.', `
+    `,
+    "(Vacío)",
+    "Cerrar"
+  );
+document.getElementById("btn_c3").onclick = () =>
+  showModalImg(
+    "Módulo C3",
+    "./img/fotos/c3.jpg",
+    "Salón de clases",
+    "El módulo C3 es un edificio color crema con techo rojo.",
+    `
     <ul>
         <li> Salones de clases </li>
     </ul>
-    `,'(Vacío)', 
-    'Cerrar');
-document.getElementById('btn_c4').onclick = () => 
-    showModalImg('Módulo C4', './img/fotos/c4.jpg', 'Dormitorio estudiantes','El módulo C4 es un edificio color crema con techo rojo.', `
+    `,
+    "(Vacío)",
+    "Cerrar"
+  );
+document.getElementById("btn_c4").onclick = () =>
+  showModalImg(
+    "Módulo C4",
+    "./img/fotos/c4.jpg",
+    "Dormitorio estudiantes",
+    "El módulo C4 es un edificio color crema con techo rojo.",
+    `
     <ul>
         <li> Dormitorios estudiantes </li>
     </ul>
-    `,'(Vacío)', 
-    'Cerrar');
-document.getElementById('btn_c5').onclick = () => 
-    showModalImg('Módulo C5', './img/fotos/c5.jpg', 'Dormitorio estudiantes','El módulo C5 es un edificio color crema con techo rojo.', `
+    `,
+    "(Vacío)",
+    "Cerrar"
+  );
+document.getElementById("btn_c5").onclick = () =>
+  showModalImg(
+    "Módulo C5",
+    "./img/fotos/c5.jpg",
+    "Dormitorio estudiantes",
+    "El módulo C5 es un edificio color crema con techo rojo.",
+    `
     <ul>
         <li> Dormitorios estudiantes </li>
     </ul>
-    `,'(Vacío)', 
-    'Cerrar');
+    `,
+    "(Vacío)",
+    "Cerrar"
+  );
 
 /*============= Varios ==============*/
-document.getElementById('btn_kk').onclick = () => 
-    showModalImg('Módulo K', './img/fotos/k.jpg', 'Salones de clases', 'El módulo K es un edificio tipo ladrillo con techo blanco.', `
+document.getElementById("btn_kk").onclick = () =>
+  showModalImg(
+    "Módulo K",
+    "./img/fotos/k.jpg",
+    "Salones de clases",
+    "El módulo K es un edificio tipo ladrillo con techo blanco.",
+    `
     <ul>
         <li> Salones de clases </li>
     </ul>
-    `,'(Vacío)', 
-    'Cerrar');
-document.getElementById('btn_cafe').onclick = () => 
-    showModalImg('Cafetería (Q)', './img/fotos/cafeteria.jpg', 'Cafetería', 'La cafetería es un edificio color crema con techo rojo y dos entradas.', `
+    `,
+    "(Vacío)",
+    "Cerrar"
+  );
+document.getElementById("btn_cafe").onclick = () =>
+  showModalImg(
+    "Cafetería (Q)",
+    "./img/fotos/cafeteria.jpg",
+    "Cafetería",
+    "La cafetería es un edificio color crema con techo rojo y dos entradas.",
+    `
     <ul>
         <li> Cafetería </li>
         <li> Baños </li>
     </ul>
-    `,`(Vacio)
+    `,
+    `(Vacio)
     <br>
     <br>
-    Horario de atención Lunes-Viernes 8:00-20:00 y Sábados 7:00-16:00 `, 
-    'Cerrar');
-document.getElementById('btn_mayor').onclick = () => 
-    showModal('Salón Mayor (P)', 'https://momento360.com/e/u/1882757fea874ff591fc447b2b810d0d?utm_campaign=embed&utm_source=other&heading=-109.94&pitch=0.34&field-of-view=75&size=medium', 'Salón mayor', 'El salón mayor es un edificio alto color gris con techo de lámina gris de tres entradas.', `
+    Horario de atención Lunes-Viernes 8:00-20:00 y Sábados 7:00-16:00 `,
+    "Cerrar"
+  );
+document.getElementById("btn_mayor").onclick = () =>
+  showModal(
+    "Salón Mayor (P)",
+    "https://momento360.com/e/u/1882757fea874ff591fc447b2b810d0d?utm_campaign=embed&utm_source=other&heading=-109.94&pitch=0.34&field-of-view=75&size=medium",
+    "Salón mayor",
+    "El salón mayor es un edificio alto color gris con techo de lámina gris de tres entradas.",
+    `
     <ul>
         <li> (Según actividad) </li>
     </ul>
-    `,'(Vacío)', 
-    'Cerrar');
-document.getElementById('btn_nn').onclick = () => 
-    showModalImg('Módulo N', './img/fotos/n.jpg', 'Módulo N','El módulo N es un edificio color crema con techo rojo.', `
+    `,
+    "(Vacío)",
+    "Cerrar"
+  );
+document.getElementById("btn_nn").onclick = () =>
+  showModalImg(
+    "Módulo N",
+    "./img/fotos/n.jpg",
+    "Módulo N",
+    "El módulo N es un edificio color crema con techo rojo.",
+    `
     <ul>
         <li> Laboratorio de música </li>
     </ul>
-    `,'(Vacío)', 
-    'Cerrar');
-document.getElementById('btn_mm1').onclick = () => 
-    showModalImg('Módulo M1', './img/fotos/m1.jpg', 'Módulo M1','El módulo M1 es un edificio color crema con techo rojo.', `
+    `,
+    "(Vacío)",
+    "Cerrar"
+  );
+document.getElementById("btn_mm1").onclick = () =>
+  showModalImg(
+    "Módulo M1",
+    "./img/fotos/m1.jpg",
+    "Módulo M1",
+    "El módulo M1 es un edificio color crema con techo rojo.",
+    `
     <ul>
         <li> Residencia catedráticos </li>
     </ul>
-    `,'(Vacío)', 
-    'Cerrar');
-document.getElementById('btn_mm2').onclick = () => 
-    showModalImg('Módulo M2', './img/fotos/m2.jpg', 'Módulo M2','El módulo M2 es un edificio color crema con techo verde.', `
+    `,
+    "(Vacío)",
+    "Cerrar"
+  );
+document.getElementById("btn_mm2").onclick = () =>
+  showModalImg(
+    "Módulo M2",
+    "./img/fotos/m2.jpg",
+    "Módulo M2",
+    "El módulo M2 es un edificio color crema con techo verde.",
+    `
     <ul>
         <li> Residencia catedráticos </li>
     </ul>
-    `,'(Vacío)', 
-    'Cerrar');
-document.getElementById('btn_ff').onclick = () => 
-    showModalImg('Módulo F', './img/fotos/f.jpg', 'Módulo F', 'El módulo F es un edificio color crema con techo verde.', `
+    `,
+    "(Vacío)",
+    "Cerrar"
+  );
+document.getElementById("btn_ff").onclick = () =>
+  showModalImg(
+    "Módulo F",
+    "./img/fotos/f.jpg",
+    "Módulo F",
+    "El módulo F es un edificio color crema con techo verde.",
+    `
     <ul>
         <li> Centro de studios Atitlán </li>
         <li> Salón de reuniones </li>
     </ul>
-    `,`Pendiente
+    `,
+    `
+    Secreataria CEA
+        <ul>
+            <li> Rosario Saquí Reanda </li>
+            <li> ext: 41502 </li>
+        </ul>
+    Técnico de laboratorio CEA
+        <ul>
+            <li> Juan Estuardo Bocel Pocop </li>
+            <li> ext: 41502 </li>
+        </ul>
+    Investigador asistente
+        <ul>
+            <li> Mónica María Martínez Fausto </li>
+            <li> ext: 41502 </li>
+        </ul>   
+    Jefe de educación ambiental CEA
+        <ul>
+            <li> Brenda María Noriega Fernandez </li>
+            <li> ext: 41503 </li>
+        </ul>     
+    Técnico de campo
+        <ul>
+            <li> Santos Rodrigo Chumil Bixcul </li>
+            <li> ext: 41503 </li>
+        </ul>  
+    Jefe de inveestigación
+        <ul>
+            <li> Jorge José García Polo </li>
+        </ul>
+    Director CEA
+        <ul>
+            <li> Jorge Luis Galindo Arébalo </li>
+            <li> ext: 41501 </li>
+        </ul>
     <br>
     <br>
-    Horario de atención Lunes-Viernes 8:00-17:00 y Sábados 8:00-12:00 `, 
-    'Cerrar');
-document.getElementById('btn_ee').onclick = () => 
-    showModalImg('Módulo E', './img/fotos/e.jpg', 'Módulo E', 'El módulo E es un edificio color crema con techo blanco.', `
+    Horario de atención Lunes-Viernes 8:00-17:00 y Sábados 8:00-12:00 `,
+    "Cerrar"
+  );
+document.getElementById("btn_ee").onclick = () =>
+  showModalImg(
+    "Módulo E",
+    "./img/fotos/e.jpg",
+    "Módulo E",
+    "El módulo E es un edificio color crema con techo blanco.",
+    `
     <ul>
         <li> EDUCON </li>
         <li> Dirección finca agrícola </li>
@@ -434,13 +701,28 @@ document.getElementById('btn_ee').onclick = () =>
         </ul>
     <br>
     Horario de atención Lunes-Viernes 8:00-17:00 y Sábados 8:00-12:00 
-    `, 'Cerrar');
-document.getElementById('btn_ññ').onclick = () => 
-    showModalImg('Módulo Ñ', './img/fotos/ñ.jpg', 'Módulo Ñ', 'El módulo Ñ es un edificio color crema con techo blanco.', `
+    `,
+    "Cerrar"
+  );
+document.getElementById("btn_ññ").onclick = () =>
+  showModalImg(
+    "Módulo Ñ",
+    "./img/fotos/ñ.jpg",
+    "Módulo Ñ",
+    "El módulo Ñ es un edificio color crema con techo blanco.",
+    `
     Laboratorio de música
-    `, '(Vacío)', 'Cerrar');
-document.getElementById('btn_cajaa').onclick = () => 
-    showModalImg('Módulo D', './img/fotos/caja.jpg', 'Caja', 'El módulo D es un edificio color crema con techo rojo.', `
+    `,
+    "(Vacío)",
+    "Cerrar"
+  );
+document.getElementById("btn_cajaa").onclick = () =>
+  showModalImg(
+    "Módulo D",
+    "./img/fotos/caja.jpg",
+    "Caja",
+    "El módulo D es un edificio color crema con techo rojo.",
+    `
     <ul>
         <li> Caja </li>
         <li> Contabilidad </li>
@@ -487,66 +769,147 @@ document.getElementById('btn_cajaa').onclick = () =>
         </ul>
     <br>
     Horario de atención Lunes-Viernes 8:00-17:00 y Sábados 8:00-12:00 
-    `, 'Cerrar');
-document.getElementById('btn_garita').onclick = () => 
-    showModalImg('Garita (G)', './img/fotos/garita.jpg', 'Garita', 'El módulo G es un edificio pequeño color crema con techo blanco.', `
+    `,
+    "Cerrar"
+  );
+document.getElementById("btn_garita").onclick = () =>
+  showModalImg(
+    "Garita (G)",
+    "./img/fotos/garita.jpg",
+    "Garita",
+    "El módulo G es un edificio pequeño color crema con techo blanco.",
+    `
     Garita entrada/salida
-    `, `
+    `,
+    `
     No especificado
         <ul>
             <li> ext: 41701 </li>
         </ul>
-    `, 'Cerrar');
-document.getElementById('btn_ll').onclick = () => 
-    showModalImg('Módulo L', './img/fotos/salalti.jpg', 'Módulo L', 'El módulo L es un edificio color crema con techo blanco.', `
+    `,
+    "Cerrar"
+  );
+document.getElementById("btn_ll").onclick = () =>
+  showModalImg(
+    "Módulo L",
+    "./img/fotos/salalti.jpg",
+    "Módulo L",
+    "El módulo L es un edificio color crema con techo blanco.",
+    `
     Salones de clases
-    `, `
+    `,
+    `
     (Vacío)
-    `, 'Cerrar');
-document.getElementById('btn_hospital').onclick = () => 
-    showModalImg('Hospital de ojos', './img/fotos/ojos.jpg', 'Oftalmología Guatemala', 'El edificio de oftalmología es color salmón con techo rojo.', `
+    `,
+    "Cerrar"
+  );
+document.getElementById("btn_hospital").onclick = () =>
+  showModalImg(
+    "Hospital de ojos",
+    "./img/fotos/ojos.jpg",
+    "Oftalmología Guatemala",
+    "El edificio de oftalmología es color salmón con techo rojo.",
+    `
     Oftalmología Guatemala (Hospital de ojos)
-    `, `
+    `,
+    `
     No especificado
     <ul>
         <li> Página web: <a class="link" href="http://oftalmologiaguatemala.com">Oftalmología Guatemala </a> </li>
         <li> Teléfono: +502 7762-4842 </li>
     </ul>
-    `, 'Cerrar');
+    `,
+    "Cerrar"
+  );
 
 /*============= INTECAP ==============*/
-document.getElementById('btn_intecap').onclick = () => 
-    showModal3('INTECAP', 'https://momento360.com/e/u/e4eef197e9f349fb90b7644b6764c7b1?utm_campaign=embed&utm_source=other&heading=-340.29&pitch=0.51&field-of-view=75&size=medium', 'Salón de textileria', 'https://momento360.com/e/u/6784c415c70c42de9f99a0b1f65bc4a8?utm_campaign=embed&utm_source=other&heading=78.76&pitch=-7.53&field-of-view=75&size=medium', 'Cosmética', 'https://momento360.com/e/u/1b56a87d1aac4a468d4eaa3aee7c5116?utm_campaign=embed&utm_source=other&heading=231.39&pitch=-25.07&field-of-view=75&size=medium', 'Cocina', 'https://momento360.com/e/u/1b56a87d1aac4a468d4eaa3aee7c5116?utm_campaign=embed&utm_source=other&heading=231.39&pitch=-25.07&field-of-view=75&size=medium', 'Taller de estilización', 'https://momento360.com/e/u/1b56a87d1aac4a468d4eaa3aee7c5116?utm_campaign=embed&utm_source=other&heading=231.39&pitch=-25.07&field-of-view=75&size=medium', 'Taller de mecánica','Las intalaciones de INTECAP están conformadas por 8 edificios separados por un corredor.', `
+document.getElementById("btn_intecap").onclick = () => (
+  "INTECAP",
+  "https://momento360.com/e/u/e4eef197e9f349fb90b7644b6764c7b1?utm_campaign=embed&utm_source=other&heading=-340.29&pitch=0.51&field-of-view=75&size=medium",
+  "Salón de textileria",
+  "https://momento360.com/e/u/6784c415c70c42de9f99a0b1f65bc4a8?utm_campaign=embed&utm_source=other&heading=78.76&pitch=-7.53&field-of-view=75&size=medium",
+  "Cosmética",
+  "https://momento360.com/e/u/1b56a87d1aac4a468d4eaa3aee7c5116?utm_campaign=embed&utm_source=other&heading=231.39&pitch=-25.07&field-of-view=75&size=medium",
+  "Cocina",
+  "https://momento360.com/e/u/1b56a87d1aac4a468d4eaa3aee7c5116?utm_campaign=embed&utm_source=other&heading=231.39&pitch=-25.07&field-of-view=75&size=medium",
+  "Taller de estilización",
+  "https://momento360.com/e/u/1b56a87d1aac4a468d4eaa3aee7c5116?utm_campaign=embed&utm_source=other&heading=231.39&pitch=-25.07&field-of-view=75&size=medium",
+  "Taller de mecánica",
+  "Las intalaciones de INTECAP están conformadas por 8 edificios separados por un corredor.",
+  `
     INTECAP
-    `, `
+    `,
+  `
     Pendiente
         <ul>
             <li> Pendiente </li>
         </ul>
     <br>
     Horario de atención Lunes-Viernes 8:00-17:00 y Sábados 8:00-12:00 
-    `, 'Cerrar');
-
+    `,
+  "Cerrar"
+);
 
 /*============= Areas/canchas/campos ==============*/
-document.getElementById('btn_canchass').onclick = () => 
-    showModalArea('Canchas', 'https://momento360.com/e/u/27ef807e4d0b4ffcb086d40031c1058a?utm_campaign=embed&utm_source=other&heading=-189.2&pitch=4.06&field-of-view=75&size=medium', 'Canchas de baloncesto/fútbol', 'Las canchas se ubican entre los módulos C y los módulos B.', 'Cerrar');
-document.getElementById('btn_campo11').onclick = () => 
-    showModalArea('Campo 1', 'https://momento360.com/e/u/9b8fc51d8987403589f7ccc2166e0947?utm_campaign=embed&utm_source=other&heading=-152.19&pitch=10.1&field-of-view=75&size=medium', 'Campo 1', 'El campo 1 se ubica despues de garita y antes de los módulos B.', 'Cerrar');
-document.getElementById('btn_campo22').onclick = () => 
-    showModalArea('Campo 2', 'https://momento360.com/e/u/5289a6287f3341528171dc684afd613a?utm_campaign=embed&utm_source=other&heading=-223.19&pitch=-0.54&field-of-view=75&size=medium', 'Campo 2', 'El campo 2 se ubica despues de los módulos A.', 'Cerrar');
-document.getElementById('btn_area11').onclick = () => 
-    showModalArea('Area 1', 'https://momento360.com/e/u/c515614aa5864a9eaff4a819bafb5ecb?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium', 'Area 1', 'El área 1 se ubica después garita y antes del campo 1.', 'Cerrar');
-document.getElementById('btn_area22').onclick = () => 
-    showModalArea('Area 2', 'https://momento360.com/e/u/9b2e02431607441391957853c4bcbb28?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium', 'Area 2', 'El área 2 se ubica entre los módulos E y F.', 'Cerrar');
-document.getElementById('btn_area33').onclick = () => 
-    showModalArea('Area 3', 'https://momento360.com/e/u/490f2b1ab7b84dcb82b468eb024be05b?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium', 'Area 3', 'El área 3 se ubica entre el campo 1 y el módulo K.', 'Cerrar');
-document.getElementById('btn_area44').onclick = () => 
-    showModalArea('Area 4', 'https://momento360.com/e/u/eaf9cafbd07f4c669991a636034940bc?utm_campaign=embed&utm_source=other&heading=65.47&pitch=-8.6&field-of-view=75&size=medium', 'Area 4', 'El área 4 se ubica despues de los módulos B y antes de la cafetería.', 'Cerrar');
+document.getElementById("btn_canchass").onclick = () =>
+  showModalArea(
+    "Canchas",
+    "https://momento360.com/e/u/27ef807e4d0b4ffcb086d40031c1058a?utm_campaign=embed&utm_source=other&heading=-189.2&pitch=4.06&field-of-view=75&size=medium",
+    "Canchas de baloncesto/fútbol",
+    "Las canchas se ubican entre los módulos C y los módulos B.",
+    "Cerrar"
+  );
+document.getElementById("btn_campo11").onclick = () =>
+  showModalArea(
+    "Campo 1",
+    "https://momento360.com/e/u/9b8fc51d8987403589f7ccc2166e0947?utm_campaign=embed&utm_source=other&heading=-152.19&pitch=10.1&field-of-view=75&size=medium",
+    "Campo 1",
+    "El campo 1 se ubica despues de garita y antes de los módulos B.",
+    "Cerrar"
+  );
+document.getElementById("btn_campo22").onclick = () =>
+  showModalArea(
+    "Campo 2",
+    "https://momento360.com/e/u/5289a6287f3341528171dc684afd613a?utm_campaign=embed&utm_source=other&heading=-223.19&pitch=-0.54&field-of-view=75&size=medium",
+    "Campo 2",
+    "El campo 2 se ubica despues de los módulos A.",
+    "Cerrar"
+  );
+document.getElementById("btn_area11").onclick = () =>
+  showModalArea(
+    "Area 1",
+    "https://momento360.com/e/u/c515614aa5864a9eaff4a819bafb5ecb?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium",
+    "Area 1",
+    "El área 1 se ubica después garita y antes del campo 1.",
+    "Cerrar"
+  );
+document.getElementById("btn_area22").onclick = () =>
+  showModalArea(
+    "Area 2",
+    "https://momento360.com/e/u/9b2e02431607441391957853c4bcbb28?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium",
+    "Area 2",
+    "El área 2 se ubica entre los módulos E y F.",
+    "Cerrar"
+  );
+document.getElementById("btn_area33").onclick = () =>
+  showModalArea(
+    "Area 3",
+    "https://momento360.com/e/u/490f2b1ab7b84dcb82b468eb024be05b?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium",
+    "Area 3",
+    "El área 3 se ubica entre el campo 1 y el módulo K.",
+    "Cerrar"
+  );
+document.getElementById("btn_area44").onclick = () =>
+  showModalArea(
+    "Area 4",
+    "https://momento360.com/e/u/eaf9cafbd07f4c669991a636034940bc?utm_campaign=embed&utm_source=other&heading=65.47&pitch=-8.6&field-of-view=75&size=medium",
+    "Area 4",
+    "El área 4 se ubica despues de los módulos B y antes de la cafetería.",
+    "Cerrar"
+  );
 
-
-// document.getElementById('btn_c5').onclick = () => 
+// document.getElementById('btn_c5').onclick = () =>
 //     showModal('C5 (Cuartos para visitantes)', './img/logodark.png', 'Esta es la descripcion del C5', 'Cientificos', 'YES', 'NO', () => {
 //         // despues del click
 //         console.log('Se eliminó');
-//     }); 
+//     });

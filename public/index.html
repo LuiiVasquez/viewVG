@@ -1,381 +1,729 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="moduloa.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/2bf434b6a6.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script
+      src="https://kit.fontawesome.com/bba53ab993.js"
+      crossorigin="anonymous"
+    ></script>
     <title>mapa UVG</title>
-</head>
-<body>
-
-  <!--Llamado de escipts-->
-  <script src="./popper.min.js"></script>
-  <script src="./js/bootstrap.min.js"></script>
-  <!--<script src="./three.js"></script>
+  </head>
+  <body>
+    <!--Llamado de escipts bootstrap-->
+    <script src="./popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!--<script src="./three.js"></script>
   <script src="./threex.domevents.js"></script>-->
-  <script src="/script.js" type="module"></script>
+    <script src="./script.js" type="module"></script>
 
+    <!--Sección del encabezado-->
+    <div class="enca">
+      <nav class="navbar navbar-expand-lg navbar-dark navColor">
+        <div class="container-fluid">
+          <img
+            src="./img/logo004.png"
+            width="125.8125"
+            height="49.125"
+            alt="logo"
+          />
 
+          <!-- Boton para dispositivos moviles -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon" id="togglermovil"></span>
+          </button>
+          <!-- FIN -->
 
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  aria-current="page"
+                  href="#"
+                  >Manual</a
+                >
+              </li>
 
-  <!--Sección del encabezado-->
-<div class="enca">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      
-      <img src="/img/favico2.png" width="50" height="50" alt="logo">
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-current="page" href="#">Manual</a>
-          </li>
-
-          <!--<li class="nav-item">
+              <!--<li class="nav-item">
             <a class="nav-link" href="#">Manual</a>
           </li>-->
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Modulos
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <!-- Modulos A -->
+              <!-- Botón listado de modulos en el encabezado -->
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">Modulos A</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" id="btn_moda1" href="#"> A1 </a></li>
-                    <li><a class="dropdown-item" id="btn_moda2" href="#"> A2 </a></li>
-                    <li><a class="dropdown-item" id="btn_moda3" href="#"> A3 </a></li>
-                    <li><a class="dropdown-item" id="btn_moda4" href="#"> A4 </a></li>
-                    <li><a class="dropdown-item" id="btn_moda5" href="#"> A5 </a></li>
-                  </ul>
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Modulos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <!-- Modulos A -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      style="color: black"
+                      >Modulos A</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" id="btn_moda1" href="#">
+                          A1
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_moda2" href="#">
+                          A2
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_moda3" href="#">
+                          A3
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_moda4" href="#">
+                          A4
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_moda5" href="#">
+                          A5
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- Modulos B -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      style="color: black"
+                      >Modulos B</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" id="btn_modb1" href="#">
+                          B1
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_modb2" href="#">
+                          B2
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_modb3" href="#">
+                          B3
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_modb4" href="#">
+                          B4
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_modb5" href="#">
+                          B5
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_modb6" href="#">
+                          B6
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_modb7" href="#">
+                          B7
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_modb8" href="#">
+                          B8
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- Modulos C -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      style="color: black"
+                      >Modulos C</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" id="btn_modc1" href="#">
+                          C1
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_modc2" href="#">
+                          C2
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_modc3" href="#">
+                          C3
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_modc4" href="#">
+                          C4
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_modc5" href="#">
+                          C5
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- Varios -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      style="color: black"
+                      >Varios</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" id="btn_e" href="#">E</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_f" href="#">F</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_k" href="#">K</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_m1" href="#">M1</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_m2" href="#">M2</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_n" href="#">N</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_ñ" href="#">Ñ</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_cafete" href="#"
+                          >Cafetería</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_sama" href="#"
+                          >Salón mayor</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_hospi" href="#"
+                          >Hospital de ojos</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_l" href="#"
+                          >Salón altiplano</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_gari" href="#"
+                          >Garita</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_caja" href="#">Caja</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- campos/canchas/areas -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      style="color: black"
+                      >Areas</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" id="btn_canchas" href="#"
+                          >Canchas</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_campo1" href="#"
+                          >Campo1</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_campo2" href="#"
+                          >Campo2</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_area1" href="#"
+                          >Area1</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_area2" href="#"
+                          >Area2</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_area3" href="#"
+                          >Area3</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" id="btn_area4" href="#"
+                          >Area4</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- Botón de INTECAP -->
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" id="btn_inte" href="#">INTECAP</a>
+                  </li>
+                </ul>
               </li>
-              <!-- Modulos B -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">Modulos B</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" id="btn_modb1" href="#"> B1 </a></li>
-                    <li><a class="dropdown-item" id="btn_modb2" href="#"> B2 </a></li>
-                    <li><a class="dropdown-item" id="btn_modb3" href="#"> B3 </a></li>
-                    <li><a class="dropdown-item" id="btn_modb4" href="#"> B4 </a></li>
-                    <li><a class="dropdown-item" id="btn_modb5" href="#"> B5 </a></li>
-                    <li><a class="dropdown-item" id="btn_modb6" href="#"> B6 </a></li>
-                    <li><a class="dropdown-item" id="btn_modb7" href="#"> B7 </a></li>
-                    <li><a class="dropdown-item" id="btn_modb8" href="#"> B8 </a></li>
-                  </ul>
+              <!-- Botón para pop-up de contaco -->
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal3"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Contacto</a
+                >
               </li>
-              <!-- Modulos C -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">Modulos C</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" id="btn_modc1" href="#"> C1 </a></li>
-                    <li><a class="dropdown-item" id="btn_modc2" href="#"> C2 </a></li>
-                    <li><a class="dropdown-item" id="btn_modc3" href="#"> C3 </a></li>
-                    <li><a class="dropdown-item" id="btn_modc4" href="#"> C4 </a></li>
-                    <li><a class="dropdown-item" id="btn_modc5" href="#"> C5 </a></li>
-                  </ul>
+              <!-- Botón para pop-up de acerca de -->
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal2"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Acerca de</a
+                >
               </li>
-              <!-- Varios -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">Varios</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" id="btn_e" href="#">E</a></li>
-                    <li><a class="dropdown-item" id="btn_f" href="#">F</a></li>
-                    <li><a class="dropdown-item" id="btn_k" href="#">K</a></li>
-                    <li><a class="dropdown-item" id="btn_m1" href="#">M1</a></li>
-                    <li><a class="dropdown-item" id="btn_m2" href="#">M2</a></li>
-                    <li><a class="dropdown-item" id="btn_n" href="#">N</a></li>
-                    <li><a class="dropdown-item" id="btn_ñ" href="#">Ñ</a></li>
-                    <li><a class="dropdown-item" id="btn_cafete" href="#">Cafetería</a></li>
-                    <li><a class="dropdown-item" id="btn_sama" href="#">Salón mayor</a></li>
-                    <li><a class="dropdown-item" id="btn_hospi" href="#">Hospital de ojos</a></li>
-                    <li><a class="dropdown-item" id="btn_l" href="#">Salón altiplano</a></li>
-                    <li><a class="dropdown-item" id="btn_gari" href="#">Garita</a></li>
-                    <li><a class="dropdown-item" id="btn_caja" href="#">Caja</a></li>
-                  </ul>
-              </li>
-              <!-- campos/canchas/areas -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">Areas</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" id="btn_canchas" href="#">Canchas</a></li>
-                    <li><a class="dropdown-item" id="btn_campo1" href="#">Campo1</a></li>
-                    <li><a class="dropdown-item" id="btn_campo2" href="#">Campo2</a></li>
-                    <li><a class="dropdown-item" id="btn_area1" href="#">Area1</a></li>
-                    <li><a class="dropdown-item" id="btn_area2" href="#">Area2</a></li>
-                    <li><a class="dropdown-item" id="btn_area3" href="#">Area3</a></li>
-                    <li><a class="dropdown-item" id="btn_area4" href="#">Area4</a></li>
-                  </ul>
-              </li>
-
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" id="btn_inte" href="#">INTECAP</a></li>
             </ul>
-          </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3" tabindex="-1" aria-disabled="true">Contacto</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2" tabindex="-1" aria-disabled="true">Acerca de</a>
-          </li>
-
-        </ul>
-
-
-
-          <!-- Search form -->
-        <div class="d-flex search-input">
-          <input class="input_user" list="datalistOptions" id="text_user" placeholder="Modulo/puesto/nombre/extension">
-          <datalist id="datalistOptions" class="autocom-box"> 
-            <!-- <option value="A4">
+            <!-- Cuadro de búsqueda -->
+            <div class="d-flex search-input">
+              <input
+                class="input_user"
+                list="datalistOptions"
+                id="text_user"
+                placeholder="Modulo/puesto/nombre/extension"
+              />
+              <datalist id="datalistOptions" class="autocom-box">
+                <!-- <option value="A4">
             <option value="Gerson Perez">
             <option value="Jefe de cómputo">
             <option value="grperez@uvg.edu.gt">
             <option value="41301"> -->
-          </datalist>
-          <button class="btn btn-outline-success" id="btn_busq"> Buscar </button>
-        </div> 
+              </datalist>
+              <button
+                class="btn"
+                style="background-color: #39b24a; color: white"
+                id="btn_busq"
+              >
+                Buscar
+              </button>
+            </div>
 
-
-
-        <!-- <form class="d-flex">
+            <!-- <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Buscar</button>
         </form> -->
-
-      </div>
-    </div>
-  </nav>
-</div>
-
-   
-<!-- ============= Script dropdown ============== -->
-<script src="./dropdown.js"></script>   
-
-
-<!-- ============= canvas ============== -->
-<div class="can">
-  <canvas class="webgl"></canvas>
-</div>
-
-
-<!-- ============= modals manual y acerca de ============== -->
-<div class="modales">
-  <!-- Modal 1 -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Manual de uso</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
         </div>
-          <div class="modal-body justify">
-            Esta sección describe el uso del mapa virtual en computadoras y el dispositivos móviles. <br> 
-          <hr>
-            <h3>General</h3> <br>
-              <p class="justify">El botón "módulos" despliga los modulos disponibles dentro de la universidad.</p>
-                <ul>
-                  <li class="justify">Una vez seleccionado un módulo, se mostrará un botón en la parte inferior para mostrar información básica del módulo.</li>
-                </ul>
-              <p class="justify">El botón "contacto" despliga información sobre la ubicación de la universidad, correo y número de contacto.</p>
-              <p class="justify"> El botón "Acerca de" despliga información sobre el desarrollador y personal involucrado.</p>
-              <p class="justify">En la sección de búsqueda puede buscar personal por el nombre, códido de módulo, puesto de trabajo o extensión (Ej: Gerson o A4)</p><br>
+      </nav>
+    </div>
+
+    <!-- ============= Script dropdown para enlistar los módulos ============== -->
+    <script src="./dropdown.js"></script>
+
+    <!-- ============= canvas para el despliegue del mapa 3D ============== -->
+    <div class="can">
+      <canvas class="webgl"></canvas>
+    </div>
+
+    <!-- ============= modals (pop-up) manual, acerca de y contacto ============== -->
+    <div class="modales">
+      <!-- Manual -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Manual de uso</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body justify">
+              Esta sección describe el uso del mapa virtual en computadoras y el
+              dispositivos móviles. <br />
+              <hr />
+              <h3>General</h3>
+              <br />
+              <p class="justify">
+                El botón "módulos" despliga los modulos disponibles dentro de la
+                universidad.
+              </p>
+              <ul>
+                <li class="justify">
+                  Una vez seleccionado un módulo, se mostrará un botón en la
+                  parte inferior para mostrar información básica del módulo.
+                </li>
+              </ul>
+              <p class="justify">
+                El botón "contacto" despliga información sobre la ubicación de
+                la universidad, correo y número de contacto.
+              </p>
+              <p class="justify">
+                El botón "Acerca de" despliga información sobre el desarrollador
+                y personal involucrado.
+              </p>
+              <p class="justify">
+                En la sección de búsqueda puede buscar personal por el nombre,
+                códido de módulo, puesto de trabajo o extensión (Ej: Gerson o
+                A4)
+              </p>
+              <br />
               <h4>Imagenes 360°</h4>
-              <p class="justify">Algunos módulos muestran imágenes en 360° interactivos los cuales muestran el interior del módulo o algunas áreas de la univeridad.</p>
-              <iframe class="ifr-360-1 d-block w-100" src="https://momento360.com/e/u/c515614aa5864a9eaff4a819bafb5ecb?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium" frameborder="0" height="500px" width="100%" allowfullscreen="true"></iframe>
-            <hr>
-            <h3>Computadoras y laptops </h3> <br>
+              <p class="justify">
+                Algunos módulos muestran imágenes en 360° interactivos, los
+                cuales muestran el interior del módulo o algunas áreas de la
+                univeridad.
+              </p>
+              <iframe
+                class="ifr-360-1 d-block w-100"
+                src="https://momento360.com/e/u/c515614aa5864a9eaff4a819bafb5ecb?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium"
+                frameborder="0"
+                height="500px"
+                width="100%"
+                allowfullscreen="true"
+              ></iframe>
+              <hr />
+              <h3>Computadoras y laptops</h3>
+              <br />
               <p>Para rotar la cámara utilice el click izquierdo del ratón.</p>
               <p>Para acercar o alejar la cámara utilice la rueda del ratón.</p>
-              <p>Para desplazarse por el mapa utilice el click derecho del ratón.</p>
-            <hr>
-            <h3> Dispositivos móviles </h3> <br>
+              <p>
+                Para desplazarse por el mapa utilice el click derecho del ratón.
+              </p>
+              <hr />
+              <h3>Dispositivos móviles</h3>
+              <br />
               <p>Para rotar la cámara utilice un solo dedo.</p>
               <p>Para acercar o alejar la cámara utilice utilice dos dedos.</p>
-              <p>Para desplazarse por el mapa utilice dos dedos en simultáneo.</p>
-            <p id="text-rojo" class="justify">
-              Para tener una mejor experiencia de interfaz, se recomienda el uso de la página en dispositivos móviles de manera vertical (Portrait)
-            </p>
+              <p>
+                Para desplazarse por el mapa utilice dos dedos en simultáneo.
+              </p>
+              <p id="text-rojo" class="justify">
+                Para tener una mejor experiencia de interfaz, se recomienda el
+                uso de la página en dispositivos móviles de manera vertical
+                (Portrait)
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
           </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+
+      <!-- Acerca de-->
+      <div
+        class="modal fade"
+        id="exampleModal2"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Acerca de</h5>
+              <button
+                type="button"
+                class="btn-close"
+                id="cerrar"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="contenedoracerca">
+                <div class="contimg">
+                  <img
+                    src="./img/logo003.png"
+                    width="100%"
+                    height="100%"
+                    alt="logouvg"
+                    id="imguvg"
+                  />
+                  <br />
+                </div>
+
+                <div>
+                  <h4>Propósito</h4>
+                  <br />
+                  <p class="justify">
+                    Esta página web fue desarrollada con el propósito de
+                    orientar a los visitantes durante su estancia en la UVGA y
+                    que puedan encontrar su destino fácilmente.
+                  </p>
+                  <p class="justify">
+                    Además, está orientado a los estudiantes de nuevo ingreso,
+                    para que estos puedan conocer las aulas, laboratorios,
+                    oficinas y demás edificios, y para que los estudiantes
+                    egresados de otros establecimientos puedan darle un vistazo
+                    a la universidad y convencerse de estudiar allí.
+                  </p>
+                  <br />
+                  <h4>Datos generales</h4>
+                  <br />
+                  <p>Desarrollador</p>
+                  <ul>
+                    <li>Nombre: Luis Antonio Vásquez Tiu</li>
+                    <li>Carné: 17888</li>
+                    <li>Correo institucional: vas17888@uvg.edu.gt</li>
+                    <li>Correo de contacto: lvasquez0127@gmail.com</li>
+                  </ul>
+                  <p>Carrera</p>
+                  <ul>
+                    <li>Licenciatura en tecnología de sistemas informáticos</li>
+                    <li>
+                      <a
+                        class="link"
+                        target="_blank"
+                        href="https://altiplano.uvg.edu.gt/ingenieria/sistemas-informatica/index.html"
+                        >Carrera</a
+                      >
+                    </li>
+                  </ul>
+                  <p>Asesor del proyecto</p>
+                  <ul>
+                    <li>Nombre: Paulo Saúl García Ramírez</li>
+                    <li>Correo: psgarcia@uvg.edu.gt</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contacto -->
+      <div
+        class="modal fade"
+        id="exampleModal3"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
+              <button
+                type="button"
+                class="btn-close"
+                id="cerrar"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="contenedoracerca">
+                <div>
+                  <h4>Cómo llegar</h4>
+                  <br />
+                  <div style="text-align: center">
+                    <iframe
+                      class="maps"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14991.310319910112!2d-91.18156820363573!3d14.788886479673108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85894ce37cda87a1%3A0xfd74b201234cd85f!2sUniversidad%20del%20Valle%20de%20Guatemala%20-%20Campus%20Altiplano!5e0!3m2!1ses!2sgt!4v1633711590245!5m2!1ses!2sgt"
+                      width="700"
+                      height="450"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                    ></iframe>
+                  </div>
+                  <br />
+                  <h4>Contacto</h4>
+                  <br />
+                  <p>
+                    <a
+                      class="link"
+                      target="_blank"
+                      href="https://altiplano.uvg.edu.gt"
+                      >Página web</a
+                    >
+                  </p>
+                  <p>Correo: info@altiplano.uvg.edu.gt</p>
+                  <p>PBX: (502) 7931-0814</p>
+                  <br />
+                  <h4>Cómo contactarse con un colaborador de UVGA</h4>
+                  <br />
+                  <p>Paso1: llamar al PBX (+502) 7931-0814</p>
+                  <p>Paso2: indicar al operador la extensión del colaborador</p>
+                  <ul>
+                    <li>
+                      Puede encontrar la extensión de cada colaborador en la
+                      sección de módulos (ej. ext 41101)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Modal 2-->
-  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Acerca de</h5>
-          <button type="button" class="btn-close" id="cerrar" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
+    <!-- ============= boton modal modulo (botón de información para cada módulo, oculto hasta acción) ============== -->
+    <div class="action" id="div-btnFloat">
+      <!--<img id="btn_a1" class="btn-float" src="./img/home.svg" alt="modulo">-->
+      <i class="fas fa-photo-video btn-float" id="btn_a1"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_a2"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_a3"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_a4"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_a5"></i>
 
-          <div class="contenedoracerca">
-            
-            <div class="contimg">
-              <img src="./img/logodark.png" width="40%" height="40%" alt="logouvg" id="imguvg"> <br>
-            </div>
+      <i class="fas fa-photo-video btn-float" id="btn_b1"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_b2"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_b3"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_b4"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_b5"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_b6"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_b7"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_b8"></i>
 
-            <div>
-              <h4>Propósito</h4> <br>
-                <p class="justify"> Esta página web fue desarrollada con el propósito de orientar a los visitantes durante su estancia en la UVGA
-                  y que puedan encontrar su destino fácilmente.
-                </p> 
-                <p class="justify"> Además, está orientado a los estudiantes de nuevo ingreso, para que estos puedan conocer las aulas, laboratorios, oficinas y demás edificios, y para que los estudiantes egresados de otros establecimientos puedan darle un vistazo a la universidad y convencerse de estudiar allí.
-                </p>
-              <br>
-              <h4>Datos generales</h4> <br>
-                <p> Desarrollador </p>
-                <ul>
-                  <li>Nombre: Luis Antonio Vásquez Tiu</li>
-                  <li>Carné: 17888</li>
-                  <li>Correo: vas17888@uvg.edu.gt</li>
-                </ul> 
-                <p>Carrera</p>
-                <ul>
-                  <li>Licenciatura en tecnología de sistemas informáticos</li>
-                  <li><a class="link" target="_blank" href="https://altiplano.uvg.edu.gt/ingenieria/sistemas-informatica/index.html">Carrera</a></li>
-                </ul>
-                <p> Asesor del proyecto</p>
-                <ul>
-                  <li>Nombre: Paulo Saúl García Ramírez</li>
-                  <li>Correo: psgarcia@uvg.edu.gt</li>
-                </ul>
-                
-            </div>
-          </div>
+      <i class="fas fa-photo-video btn-float" id="btn_c1"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_c2"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_c3"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_c4"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_c5"></i>
 
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
+      <i class="fas fa-photo-video btn-float" id="btn_kk"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_cafe"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_mayor"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_nn"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_mm1"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_mm2"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_ff"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_ee"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_ññ"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_cajaa"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_garita"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_ll"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_hospital"></i>
+
+      <i class="fas fa-photo-video btn-float" id="btn_intecap"></i>
+
+      <i class="fas fa-photo-video btn-float" id="btn_canchass"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_campo11"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_campo22"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_area11"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_area22"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_area33"></i>
+      <i class="fas fa-photo-video btn-float" id="btn_area44"></i>
     </div>
-  </div>
 
+    <!-- Scripts para función de botones en modulos -->
+    <script type="module" src="./modulos.js"></script>
 
-  <!-- Modal 3-->
-  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
-          <button type="button" class="btn-close" id="cerrar" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
+    <!-- Scripts para función de botones floating, creación de innerHTML e información de cada módulo-->
+    <script src="./modal.js"></script>
+    <script src="./modal-inf.js"></script>
 
-          <div class="contenedoracerca">
-            <div>
-              <h4>Cómo llegar</h4> <br>
-              <div style="text-align: center;">
-              <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14991.310319910112!2d-91.18156820363573!3d14.788886479673108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85894ce37cda87a1%3A0xfd74b201234cd85f!2sUniversidad%20del%20Valle%20de%20Guatemala%20-%20Campus%20Altiplano!5e0!3m2!1ses!2sgt!4v1633711590245!5m2!1ses!2sgt" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-              <br>
-              <h4>Contacto</h4> <br>
-              <p> <a class="link" target="_blank" href="https://altiplano.uvg.edu.gt">Página web</a> </p> 
-              <p> Correo: info@altiplano.uvg.edu.gt </p> 
-              <p> PBX: (502) 7931-0814</p>
-              <br>
-              <h4>Cómo contactarse con un colaborador de UVGA</h4> <br>
-              <p> Paso1: llamar al PBX (+502) 7931-0814 </p> 
-              <p> Paso2: indicar al operador la extensión del colaborador</p>
-                <ul>
-                  <li>Puede encontrar la extensión de cada colaborador en la sección de módulos (ej. ext 41101)</li>
-                </ul> 
-            </div>
-          </div>
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- ============= boton modal modulo ============== -->
-<div class="action" id="div-btnFloat">
-  <!--<img id="btn_a1" class="btn-float" src="./img/home.svg" alt="modulo">-->
-  <i class="fas fa-photo-video btn-float" id="btn_a1"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_a2"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_a3"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_a4"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_a5"></i>
-
-  <i class="fas fa-photo-video btn-float" id="btn_b1"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_b2"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_b3"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_b4"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_b5"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_b6"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_b7"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_b8"></i>
-
-  <i class="fas fa-photo-video btn-float" id="btn_c1"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_c2"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_c3"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_c4"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_c5"></i>
-
-  <i class="fas fa-photo-video btn-float" id="btn_kk"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_cafe"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_mayor"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_nn"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_mm1"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_mm2"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_ff"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_ee"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_ññ"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_cajaa"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_garita"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_ll"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_hospital"></i>
-
-  <i class="fas fa-photo-video btn-float" id="btn_intecap"></i>
-
-  <i class="fas fa-photo-video btn-float" id="btn_canchass"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_campo11"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_campo22"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_area11"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_area22"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_area33"></i>
-  <i class="fas fa-photo-video btn-float" id="btn_area44"></i>
-
-</div>
-
-
-
-<!-- Scripts para función de botones en modulos -->
-<script type="module" src="./modulos.js"></script>
-
-
-<!-- Scripts para función de botones floating -->
-<script src="./modal.js"></script>
-<script src="./modal-inf.js"></script>
-
-<!-- ============= Script para busqueda ============== -->
-<script src="./autowords.js"></script>
-<script type="module" src="./search.js"></script>
-
-
-
-</body>
+    <!-- ============= Script autocompletado y búsqueda============== -->
+    <script src="./autowords.js"></script>
+    <script type="module" src="./search.js"></script>
+  </body>
 </html>
