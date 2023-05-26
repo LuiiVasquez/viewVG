@@ -15,10 +15,12 @@ app.get('/', (req, res)=>{
     res.sendFile(__dirname + '/public/index.html');
 })
 
+const PORT = process.env.PORT || 4000;
+
 // definir un puerto para el servidor
 // función para avisar que el servidor está corriendo
-app.listen(3000, ()=>{
-    console.log('server running on port: ', 3000);
+app.listen(PORT, ()=>{
+    console.log('server running on port: ', PORT);
 })
 
 // reiniciar el servidor cada vez que se hagan cambios
